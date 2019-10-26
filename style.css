@@ -1,0 +1,118 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: 0;
+}
+
+body {
+    font-family: 'Spectral', serif;
+}
+
+#myVideo{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -2;
+}
+
+.app{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    margin : 50px 0px 30px;
+    text-align: center;
+    font-size: 100px;
+    color: #797576;
+}
+
+header p {
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center;
+
+}
+
+.pads{
+    background: lightblue;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.pads > div{
+    height: 100px;
+    width: 100px;
+    flex : 1;
+}
+
+.pad1{
+    background: #EEEEF0 ;
+}
+
+.pad2{
+    background: #D0DDD6;
+}
+
+.pad3{
+    background: #98A299;
+}
+
+.pad4{
+    background: #797576;
+}
+
+.pad5{
+    background: #D4D2C3;
+}
+
+.pad6{
+    background: #ECF0D7;
+}
+
+.visual > div {
+    position: absolute;
+    height: 10px;
+    width: 150px;
+    border-radius: 10%;
+    left : 0%;
+    bottom :100%;
+    z-index: -1;
+}
+
+@keyframes jump{
+    0%{
+        /* bottom: 0%; */
+        left: 0%;
+        bottom: 50%;
+        opacity: 0%;
+    }
+
+    45%{
+        opacity: 30%;
+    }
+
+    50%{
+        left: 40%;
+        opacity: 50%;
+    }
+    55%{
+        left: 50%;
+    }
+
+    65%{
+        opacity: 30%;
+    }
+
+    100%{
+        left: 90%;
+        bottom: 50%;
+        opacity: 0%;
+    }
+}
